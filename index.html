@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="cover"></div>
+      
+      <div class="content-wrapper">
+        <div id="profile">
+          <img
+            src="./assets/cute_cat.jpg"
+            alt="cute cat"
+            class="profile__pic"
+          />
+        </div>
+
+        <h1 class="name">ilhye</h1>
+        <p>ilhye#2805</p>
+
+        <div class="info-section">
+    
+          <ul class="nav">
+            <li class="nav-link" onmouseover="setHoverIndex(0)">About Me</li>
+            <li class="nav-link" onmouseover="setHoverIndex(1)">Education</li>
+            <li class="nav-link" onmouseover="setHoverIndex(2)">Work</li>
+            <div class="underline"></div>
+          </ul>
+
+          <p class="intro">
+            Hi! I am ilhye, an aspiring front-end developer. I am a third-year
+            student at Polytechnic University of the Pihilippines
+          </p>
+
+          <div class="technologies">
+            <h1>Technologies</h1>
+            <div class="technologies__badge"></div>
+          </div>
+
+          <div class="featured-work">
+            <div class="card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function setHoverIndex(index) {
+        document.documentElement.style.setProperty("--hover-index", index);
+      }
+    </script>
+  </body>
+</html>

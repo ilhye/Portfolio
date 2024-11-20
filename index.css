@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #23272A;
+  color: white;
+}
+
+.main {
+    margin: auto;
+    width: 50%;
+    background-color: #2C2F33;
+    border-radius: 10px;
+}
+
+#cover {
+    height: 90px;
+    background-color: papayawhip;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#profile {
+    padding: 5px;
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+}
+
+.profile__pic {
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+}
+
+.content-wrapper {
+    padding: 25px;
+}
+
+.name {
+    margin-top: 1.5em;
+}
+
+.info-section {
+    background-color: #1E2124;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 2px solid #23272A;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+.nav-link {
+    cursor: pointer;
+    position: relative;
+    width: 33.33%;
+    text-align: center; 
+}
+
+.underline {
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    z-index: 0;
+    transition: all 0.3s ease; 
+}
+
+.nav-link:hover~.underline {
+    width: 33.33%; 
+    left: calc(var(--hover-index, 0) * 33.33%);
+}
